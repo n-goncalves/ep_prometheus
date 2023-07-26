@@ -2,7 +2,7 @@
 
 const stats = require('ep_etherpad-lite/node/stats');
 
-exports.expressCreateServer = (hookName, args, cb) => {
+exports.expressPreSession = (hookName, args, cb) => {
   args.app.get('/metrics', (req, res) => {
     let response = '';
     const flattened = flatten(stats.toJSON());

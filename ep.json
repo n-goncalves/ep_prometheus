@@ -3,7 +3,7 @@
         {
             "name": "ep_prometheus",
             "hooks": {
-                "expressCreateServer" : "ep_prometheus/index"
+                "expressPreSession" : "ep_prometheus/index"
             }
         }
     ]
